@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fbf4fd;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main-container {
+    width: 100%;
+    height: auto;
+}
+
+.wsaicon {
+    width: 25%;
+    height: 10vh;
+}
+
+.wsa-icon-container {
+    margin: 25px 65px;
+}
+
+.sub-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+}
+
+.header-container {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    color: #000000;
+    font-weight: 700;
+    font-size: 60px;
+    text-transform: uppercase;
+    font-family: "poppins",sans-serif;
+    padding: 60px;
+}
+
+.calculator-container {
+    width: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background-circle {
+    width: 60%;
+    height: 60vh;
+    border-radius: 50%;
+    background-color: #f5eafd;
+    position: absolute;
+}
+
+.calculator {
+    width: 80%;
+    max-width: 320px;
+    height: auto;
+    background-color: #ffffff;
+    border-radius: 33px;
+    border: 10px solid #e2e2e2;
+    position: relative;
+    padding: 20px;
+    box-sizing: border-box;
+    z-index: 1;
+    top: 20px;
+}
+
+.output-field-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-field,
+.output-field {
+    width: 100%;
+    background-color: #f3f2f2;
+    font-size: 30px;
+    border: none;
+    text-align: end;
+   
+}
+
+.input-field:focus,
+.output-field:focus {
+    outline: none;
+}
+
+.button-container {
+    padding-top: 20px;
+   
+}
+
+.btn-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    gap:10px
+
+}
+
+button {
+    width: 22%;
+    border-radius: 10px;
+    height: 6vh;
+    border: none;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #2a2828;
+    color: #f3f2f2;
+}
+
+.bg-icon {
+    background-color: #fceebd;
+}
+
+.bg-icon:hover {
+    background-color: #fceebd;
+}
+
+.equals-icon-bg-icon {
+    background-color: #ffc138;
+}
+
+button i {
+    color: #bd882a;
+    font-size: 15px;
+}
+
+button:hover i {
+    color: white;
+}
+
+.zero {
+    width: 48%;
+}
+
+.footer-name {
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 40px 20px;
+}
+.clear-icon {
+  width: 90px;
+}
+.delete-icon,
+.percentage-icon {
+  width: 90px;
+} 
+
+@media screen and (max-width: 768px) {
+    .header-container, .calculator-container {
+        width: 100%;
+    }
+
+    .header {
+        font-size: 40px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .background-circle {
+        width: 80%;
+        height: 40vh;
+    }
+
+    .calculator {
+        width: 90%;
+        max-width: 100%;
+        top: 0;
+    }
+
+    .wsa-icon-container {
+        margin: 20px;
+        text-align: center;
+    }
+
+    .wsaicon {
+        width: 40%;
+    }
+
+    button {
+        height: 45px;
+        font-size: 18px;
+    }
+
+    .input-field,
+    .output-field {
+        font-size: 24px;
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
+    .header {
+        font-size: 50px;
+        padding: 40px;
+        text-align: center;
+    }
+
+    .calculator-container {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .background-circle {
+        width: 70%;
+        height: 50vh;
+    }
+
+    .calculator {
+        width: 80%;
+        max-width: 360px;
+    }
+
+    button {
+        width: 22%;
+        height: 6vh;
+        font-size: 18px;
+    }
+
+    .zero {
+        width: 48%;
+    }
+
+    .input-field,
+    .output-field {
+        font-size: 26px;
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    .header {
+        font-size: 32px;
+        padding: 20px;
+    }
+
+    .background-circle {
+        width: 90%;
+        height: 30vh;
+    }
+
+    .calculator {
+        width: 95%;
+        padding: 15px;
+    }
+
+    button {
+        width: 22%;
+        height: 40px;
+        font-size: 16px;
+    }
+
+    .zero {
+        width: 46%;
+    }
+
+    .input-field,
+    .output-field {
+        font-size: 20px;
+    }
+
+    .footer-name {
+        font-size: 12px;
+        padding: 20px;
+    }
+
+    .wsaicon {
+        width: 50%;
+    }
+}
+
